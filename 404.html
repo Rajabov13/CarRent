@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RentCar Uzbekistan — compare reference car rental prices in Tashkent and Samarkand, estimate your rental cost and request a booking." />
+    <link rel="icon" type="image/svg+xml" href="/CarRent/favicon.svg" />
+    <meta name="color-scheme" content="light dark" />
+    <title>RentCar Uzbekistan</title>
+    <script>
+      // Apply the saved (or system) theme before first paint to avoid a white flash.
+      (function () {
+        try {
+          var saved = localStorage.getItem('rcu-theme');
+          var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (dark) document.documentElement.classList.add('dark');
+          var lang = localStorage.getItem('rcu-lang');
+          if (lang) document.documentElement.lang = lang;
+        } catch (e) {}
+      })();
+    </script>
+    <style>
+      html { background: #f6f7f9; }
+      html.dark { background: #0b0f17; }
+    </style>
+    <script type="module" crossorigin src="/CarRent/assets/index-BLHRL3nF.js"></script>
+    <link rel="stylesheet" crossorigin href="/CarRent/assets/index-Csr720kh.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
